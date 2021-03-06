@@ -1,0 +1,516 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(35, 35, 35)!important;
+    width: 100%;
+    height: 100%;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+nav
+{
+    background-color: rgb(45, 45, 45)!important;
+    transition: 0.5s;
+    position: fixed!important;
+    margin: 0;
+    width: 100%!important;
+}
+
+
+nav.active
+{
+    margin: 10px 0;
+    border-radius: 30px;
+    box-shadow: 0 0 32px 4px black;
+    padding: 20px;
+}
+
+nav>div>a
+{
+    color: white!important;
+}
+
+nav>div>button:focus
+{
+    color: white;
+}
+
+nav>div>button>i
+{
+    color: white;
+    font-size: 32px;
+}
+
+#navbarSupportedContent .d-flex>li>a
+{
+    color: white;
+}
+
+#navbarSupportedContent .d-flex>li>ul
+{
+    border-radius: 0!important;
+    background-color: rgb(30, 30, 30)!important;
+}
+
+#navbarSupportedContent .d-flex>li>ul>li
+{
+    background-color: rgb(30, 30, 30);
+    transition: 0.5s;
+}
+
+#navbarSupportedContent .d-flex>li>ul>li:hover
+{
+    background-color: rgb(45, 45, 45);
+}
+
+#navbarSupportedContent .d-flex>li>ul>li>a
+{
+    color: white!important;
+}
+
+.nav-item
+{
+
+    transition: 0.5s;
+}
+
+.nav-item:hover
+{
+    background-color: rgb(35, 35, 35);
+}
+
+.nav-item>a
+{
+    color: white!important;
+}
+
+.search form input
+{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    margin: 10px 200px 10px 0px;
+    padding: 10px;
+}
+
+.search form .list
+{
+    position: absolute;
+    height: auto;
+    background-color: rgb(100,100,100);
+    width: 100%;
+    border-radius: 8px;
+}
+
+.d-flex.search form
+{
+    position: relative;
+}
+
+.search form .list .user_search
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none!important;
+    transition: 0.5s background-color;
+}
+
+.search form .list .user_search:hover
+{
+    background-color: rgb(50, 50, 50);
+}
+
+.search form .list .user_search p
+{
+    margin: 0;
+    color: white;
+}
+
+.search form .list .user_search img
+{
+    border-radius: 60px;
+    border: 2px solid rgb(0, 170, 255);
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 0 0;
+}
+
+
+/* Form */
+
+#error
+{
+    display: block;
+    background-color: rgb(255, 81, 81);
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    color: white;
+}
+
+.display-n
+{
+    display: none!important;
+}
+
+.form-group
+{
+    margin: 15px 0;
+}
+
+.form-group label
+{
+    color: white;
+}
+
+.form-control
+{
+    border-radius: 0!important;
+    background-color: rgb(55, 55, 55)!important;
+    color: white!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.register-login
+{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center;
+    flex-direction: column!important;
+}
+
+.register-login .form-control
+{
+    min-width: 300px;
+    max-width: 300px;
+}
+
+/* User_Page */
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .account
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .account img
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+}
+
+.banned
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banned h5
+{
+    color: white;
+}
+
+.profile .account img[class="admin"]
+{
+    border: 4px solid red;
+}
+
+.profile .account img[class="member"]
+{
+    border: 4px solid rgb(0, 170, 255);
+}
+
+.profile .account p
+{
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.profile .stats
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 30px 0;
+}
+
+.profile .stats .col
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 0 30%
+}
+
+.profile .stats .col h5, h6
+{
+    color: white;
+}
+
+.posts
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.posts .post
+{
+    width: 400px;
+    height: 500px;
+    background-color: gray;
+    margin: 3px;
+}
+
+/* Settings */
+
+.profile_picture_settings
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.profile_picture_settings input
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.profile_picture_settings img
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+}
+
+/* Index */
+
+.news
+{
+    width: 100%;
+    min-height: 450px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news .header
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+}
+
+.news .header p:nth-child(1)
+{
+    margin: 0 0 0 15px;
+}
+
+.news .header p:nth-child(2)
+{
+    margin: 0 15px 0 0;
+}
+
+.news .header p
+{
+    color: white;
+    font-size: 18px;
+}
+
+.sep
+{
+    width: 100%;
+    border-bottom: 4px solid rgb(0, 170, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.sep p
+{
+    margin: 0;
+    display: inline-block;
+    background-color: rgb(0, 170, 255);
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+}
+
+.user
+{
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.5s background-color;
+    margin: 0 0 20px 0;
+}
+
+.user img
+{
+    border-radius: 360px;
+    width: 45px;
+    height: 45px;
+    transform: scale(1.2);
+    margin: 0;
+    padding: 0;
+    transition: 0.1s transform;
+}
+
+.user img[class="staff"]
+{
+    border: 2px solid red!important;
+}
+
+.user img
+{
+    border: 2px solid rgb(0, 170, 255);
+}
+
+.user p
+{
+    color: white;
+    margin: 0 0 0 15px;
+}
+
+.user:hover
+{
+    background-color: rgb(60, 60, 60);
+}
+
+.user:hover img
+{
+    transform: scale(1.3);
+}
+
+/*
+
+ */
+
+/* All */
+
+hr
+{
+    background-color: white!important;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+.h-1
+{
+    height: 100px;
+}
+
+.h-2
+{
+    height: 200px;
+}
+
+.h-3
+{
+    height: 300px;
+}
+
+.h-4
+{
+    height: 400px;
+}
+
+.h-5
+{
+    height: 500px;
+}
+/* Media */
+
+@media only screen and (max-width: 991px)
+{
+    .d-flex.search form
+    {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 991px)
+{
+    .d-flex.search form
+    {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 524px)
+{
+    .profile
+    {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 322px)
+{
+    .profile .stats
+    {
+        margin: 30px 0;
+        flex-direction: column;
+    }
+
+    .profile .stats .col
+    {
+        margin: 15px;
+    }
+}
